@@ -11,10 +11,9 @@ int main(void)
 	l = 'a';
 	while (l <= 'z')
 	{
-		if ((l = 'e') && (l != 'q'))
-
+		if ((l != 'e') && (l != 'q'))
 		{
-  		 putchar(l);
+			putchar(l);
 			l++;
 		}
 		else
@@ -24,4 +23,5 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
+
 }
