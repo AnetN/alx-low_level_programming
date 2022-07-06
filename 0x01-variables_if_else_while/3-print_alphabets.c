@@ -1,5 +1,8 @@
 #include <stdio.h>
-/* printing the alphabet */
+/**
+ * main - Entry point
+ * Return: Always 0 (Success)
+*/
 int main(void)
 {
 	char c;
