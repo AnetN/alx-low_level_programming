@@ -12,7 +12,7 @@ int main(void)
 
 	char c;
 
-	char s[] = "main\n";
+	char s[] ="_putchar\n";
 
 
 	while (i <= 9)
