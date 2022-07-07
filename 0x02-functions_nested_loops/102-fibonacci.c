@@ -11,10 +11,8 @@ int main(void)
 	a = 1;
 	b = 2;
 	c = 3;
-
 	printf("%ld, ", a);
 	printf("%ld, ", b);
-
 	for (d = 3; d < 50; d++)
 	{
 		printf("%ld, ", c);
