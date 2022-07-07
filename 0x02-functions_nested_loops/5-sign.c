@@ -1,13 +1,12 @@
-#include "main.h"
+#include "holberton.h"
 /**
  * print_sign - checks for integer sign
  * @n: integer to check
  *
  * Return: 0 or 1
-*/
+ */
 int print_sign(int n)
-{	
-
+{
 	if (n > 0)
 	{
 		_putchar(43);
