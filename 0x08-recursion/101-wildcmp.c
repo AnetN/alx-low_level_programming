@@ -27,8 +27,9 @@ char *test(char *s5, char *s6, char *t5, char *t6)
 char *wildcard(char *s3, char *s4)
 {
 	if (*s3 != *s4)
+	
 	{
-         	if (*s3 == '\0')
+		if (*s3 == '\0')
 			return (0);
 		return (wildcard(s3 + 1, s4));
 	}
