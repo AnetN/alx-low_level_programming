@@ -46,8 +46,7 @@ int main(void)
 				else if (j == 57)
 				{
 					j = 48;
-				       	l = 49;
-				       	k = ++i;
+				       	l=49;k = ++i;
 				}
 			}
 			else if (l < 57)
@@ -56,8 +55,7 @@ int main(void)
 			}
 			else
 			{
-				l = 48;
-			       	k++;
+				l = 48;k++;
 			}
 		}
 	}
