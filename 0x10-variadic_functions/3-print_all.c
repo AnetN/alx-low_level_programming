@@ -17,7 +17,6 @@ void print_all(const char * const format, ...);
  */
 void print_char(va_list arg)
 {
-
 	char letter;
 
 	letter = va_arg(arg, int);
@@ -46,6 +45,7 @@ void print_float(va_list arg)
 
 	num = va_arg(arg, double);
 	printf("%f", num);
+
 }
 /**
  * print_string - Prints a string.
@@ -54,6 +54,7 @@ void print_float(va_list arg)
  */
 void print_string(va_list arg)
 {
+
 	char *str;
 
 	str = va_arg(arg, char *);
@@ -75,6 +76,7 @@ void print_string(va_list arg)
  */
 void print_all(const char * const format, ...)
 {
+
 	va_list args;
 
 	int i = 0, j = 0;
@@ -88,22 +90,22 @@ void print_all(const char * const format, ...)
 		{"s", print_string}
 	};
 	va_start(args, format);
+
 	while (format && (*(format + i)))
 	{
 		j = 0;
 		while (j < 4 && (*(format + i) != *(funcs[j].symbol)))
 			j++;
 
-
 		if (j < 4)
 		{
 			printf("%s", separator);
 			funcs[j].print(args);
 			separator = ", ";
-		}
+		
 		i++;
-	
 	}
 	printf("\n");
 	va_end(args);
+
 }
