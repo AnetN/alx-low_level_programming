@@ -39,29 +39,26 @@ int op_mul(int a, int b)
   * @a: ...
   * @b: ...
   *
-  * Return: ..
+  * Return: ...
   */
 int op_div(int a, int b)
 {
 	if (b == 0)
 	{
-
 		printf("Error\n");
 		exit(100);
-
 	}
 	return (a / b);
 }
 /**
   * op_mod - ...
-  * @a: ...
-  * @b: ...
+  *@a: ...
+  *@b: ...
   *
   * Return: ...
   */
 int op_mod(int a, int b)
 {
-
 	if (b == 0)
 	{
 		printf("Error\n");
